@@ -2,7 +2,7 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
 	<name>mod_twingle</name>
 	<author>Benno Flory</author>
-	<authorUrl>www.joomla.org</authorUrl>
+	<authorUrl>https://github.com/sternenvogel</authorUrl>
 	<creationDate>August 2021</creationDate>
 	<copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
