@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_twingle</name>
+	<author>Benno Flory</author>
+	<authorUrl>www.joomla.org</authorUrl>
+	<creationDate>August 2021</creationDate>
+	<copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>3.0.0</version>
+	<description>MOD_TWINGLE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_twingle">mod_twingle.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_twingle.ini</language>
+		<language tag="de-DE">de-DE.mod_twingle.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_TWINGLE" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+        
+				<field
+					name="project_id"
+					type="text"
+					label="MOD_TWINGLE_FIELD_PROJECT_ID_LABEL"
+					description="MOD_TWINGLE_FIELD_PROJECT_ID_DESC"
+				/>
+
+			</fieldset>
+			<fieldset name="advanced">
+        
+        <field
+					name="type"
+					type="list"
+					label="COM_TWINGLE_FIELD_TYPE_LABEL"
+					description="COM_TWINGLE_FIELD_TYPE_DESC"
+					default="widget"
+					>
+					<option value="widget">COM_TWINGLE_FIELD_TYPE_VALUE_WIDGET</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
