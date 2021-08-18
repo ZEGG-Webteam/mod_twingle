@@ -16,7 +16,7 @@ JHtml::_('jquery.framework');
 $document   = JFactory::getDocument();
 $project_id = $params->get('project_id', '0');
 $type       = $params->get('type', 'widget');
-$id = '_randomthing';
+$id         = '_' . ModTwingleHelper::generateRandomString(9);
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 
