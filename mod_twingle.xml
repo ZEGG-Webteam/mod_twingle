@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1" client="site" method="upgrade">
-	<name>mod_twingle</name>
+<extension type="module" version="1.0" client="site" method="upgrade">
+	<name>MOD_TWINGLE</name>
 	<author>Benno Flory</author>
 	<authorUrl>https://github.com/sternenvogel</authorUrl>
 	<creationDate>August 2021</creationDate>
 	<copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.0.0</version>
+	<version>1.0.0</version>
 	<description>MOD_TWINGLE_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_twingle">mod_twingle.php</filename>
@@ -14,10 +14,11 @@
 		<filename>helper.php</filename>
 	</files>
 	<languages>
-		<language tag="en-GB">en-GB.mod_twingle.ini</language>
-		<language tag="de-DE">de-DE.mod_twingle.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_twingle.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_twingle.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_twingle.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_twingle.sys.ini</language>
 	</languages>
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_TWINGLE" />
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
