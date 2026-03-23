@@ -10,15 +10,16 @@
 	<description>MOD_TWINGLE_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Twingle</namespace>
 	<files>
-		<folder>services</folder>
+		<folder module="mod_twingle">services</folder>
 		<folder>src</folder>
 		<folder>tmpl</folder>
+		<folder>language</folder>
 	</files>
-	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.mod_twingle.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_twingle.sys.ini</language>
-		<language tag="de-DE">language/de-DE/de-DE.mod_twingle.ini</language>
-		<language tag="de-DE">language/de-DE/de-DE.mod_twingle.sys.ini</language>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_twingle.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_twingle.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_twingle.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_twingle.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
