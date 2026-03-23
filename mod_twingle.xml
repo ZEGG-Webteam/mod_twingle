@@ -6,7 +6,7 @@
 	<creationDate>March 2026</creationDate>
 	<copyright>Copyright (C) 2022 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>2.0.0</version>
+	<version>2.0.1</version>
 	<description>MOD_TWINGLE_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Twingle</namespace>
 	<files>
@@ -15,6 +15,9 @@
 		<folder>tmpl</folder>
 		<folder>language</folder>
 	</files>
+	<media destination="mod_twingle" folder="assets">
+		<folder>css</folder>
+	</media>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_twingle.ini</language>
 		<language tag="en-GB">en-GB/en-GB.mod_twingle.sys.ini</language>

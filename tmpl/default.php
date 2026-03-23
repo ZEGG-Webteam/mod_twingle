@@ -14,6 +14,7 @@ use Joomla\CMS\Factory;
 
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = Factory::getApplication()->getDocument()->getWebAssetManager();
+$wa->registerAndUseStyle('mod_twingle', 'mod_twingle/twingle.css');
 
 $project_id = $params->get('project_id', '0');
 $type       = $params->get('type', 'widget');
@@ -48,7 +49,7 @@ $wa->addInlineScript('
 ?>
 
 <!-- twingle -->
-  <div class="twingle<?php echo $moduleclass_sfx; ?> <?= $type; ?>">
+  <div class="mod-twingle<?php echo $moduleclass_sfx; ?> <?= $type; ?>">
     <div id="twingle-public-embed-<?= $id ?>"></div>
   </div>
 <!-- twingle -->
