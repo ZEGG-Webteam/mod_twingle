@@ -3,10 +3,10 @@
 	<name>MOD_TWINGLE</name>
 	<author>Benno Flory</author>
 	<authorUrl>https://github.com/sternenvogel</authorUrl>
-	<creationDate>August 2021</creationDate>
-	<copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
+	<creationDate>April 2022</creationDate>
+	<copyright>Copyright (C) 2022 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>1.0.0</version>
+	<version>1.2.0</version>
 	<description>MOD_TWINGLE_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_twingle">mod_twingle.php</filename>
@@ -22,25 +22,65 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-        
+
 				<field
 					name="project_id"
 					type="text"
 					label="MOD_TWINGLE_FIELD_PROJECT_ID_LABEL"
 					description="MOD_TWINGLE_FIELD_PROJECT_ID_DESC"
+					required="1"
+				/>
+
+				<field
+					name="tw_amount"
+					type="number"
+					label="MOD_TWINGLE_FIELD_TW_AMOUNT_LABEL"
+					description="MOD_TWINGLE_FIELD_TW_AMOUNT_DESC"
+				/>
+				<field
+					name="tw_target"
+					type="text"
+					label="MOD_TWINGLE_FIELD_TW_TARGET_LABEL"
+					description="MOD_TWINGLE_FIELD_TW_TARGET_DESC"
+				/>
+				<field
+					name="tw_rhythm"
+					type="list"
+					label="MOD_TWINGLE_FIELD_TW_RYTHM_LABEL"
+					description="MOD_TWINGLE_FIELD_TW_RYTHM_DESC"
+					default="undefined"
+					>
+					<option value="undefined">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_UNDEFINED</option>
+					<option value="one_time">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_ONE_TIME</option>
+					<option value="monthly">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_MONTHLY</option>
+					<option value="quarterly">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_QUARTERLY</option>
+					<option value="halfyearly">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_HALFYEARLY</option>
+					<option value="yearly">MOD_TWINGLE_FIELD_TW_RYTHM_VALUE_YEARLY</option>
+				</field>
+				<field
+					name="tw_min"
+					type="number"
+					label="MOD_TWINGLE_FIELD_TW_MIN_LABEL"
+					description="MOD_TWINGLE_FIELD_TW_MIN_DESC"
+				/>
+				<field
+					name="tw_max"
+					type="number"
+					label="MOD_TWINGLE_FIELD_TW_MAX_LABEL"
+					description="MOD_TWINGLE_FIELD_TW_MAX_DESC"
 				/>
 
 			</fieldset>
 			<fieldset name="advanced">
-        
-        <field
+
+				<field
 					name="type"
 					type="list"
-					label="COM_TWINGLE_FIELD_TYPE_LABEL"
-					description="COM_TWINGLE_FIELD_TYPE_DESC"
+					label="MOD_TWINGLE_FIELD_TYPE_LABEL"
+					description="MOD_TWINGLE_FIELD_TYPE_DESC"
 					default="widget"
 					>
-					<option value="widget">COM_TWINGLE_FIELD_TYPE_VALUE_WIDGET</option>
+					<option value="widget">MOD_TWINGLE_FIELD_TYPE_VALUE_WIDGET</option>
 				</field>
 
 			</fieldset>
